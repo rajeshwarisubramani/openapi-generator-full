@@ -1,0 +1,30 @@
+server:
+  port: 8081
+
+springdoc:
+  swagger-ui:
+    disable-swagger-default-url: true
+    path: /api-docs/swagger
+
+
+spring:
+  sql:
+    init:
+      mode: always
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:sqlserver://localhost\SQLEXPRESS:1433;databaseName=testdb;encrypt=false;trustServerCertificate=true;
+    username: test
+    password: abc123
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    defer-datasource-initialization: true
+    spring:
+      jpa:
+        properties:
+          hibernate.transaction.jta.platform: org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform
+
