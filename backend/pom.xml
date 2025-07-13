@@ -132,7 +132,7 @@
                             <output>${project.build.directory}/generated-sources/frontend-ts-axios-package</output>
                             <configOptions>
                                 <title>frontend</title>
-                                <npmName>@devrcoder/youtube-videos-api</npmName>
+                                <npmName>@rajeshwarisubramani/youtube-videos-api</npmName>
                                 <npmVersion>${project.version}</npmVersion>
                                 <npmRepository>https://npm.pkg.github.com</npmRepository>
                             </configOptions>
